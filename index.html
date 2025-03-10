@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meu Portfólio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+      }
+
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      section {
+        padding: 40px 10%;
+        margin: 20px 0;
+      }
+
+      section h2 {
+        text-align: center;
+        color: #333;
+      }
+
+      .projects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .project {
+        background-color: #ffffffc0;
+        border: 1px solid #ddddddb4;
+        padding: 20px;
+        width: 30%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s;
+
+        & img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .project:hover {
+        transform: translateY(-10px);
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bem-vindo ao meu Portfólio</h1>
+    </header>
+
+    <nav>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#projetos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá, meu nome é Italo. Sou um desenvolvedor web apaixonado por criar
+        soluções criativas e funcionais. Tenho experiência em HTML, CSS,
+        JavaScript e outras tecnologias web. Meu objetivo é ajudar empresas e
+        indivíduos a construir uma presença online impactante.
+      </p>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus Serviços</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="img/HTML5_logo_and_wordmark.svg.png" alt="" />
+        </div>
+        <div class="project">
+          <img src="img/image.png" alt="" />
+        </div>
+        <div class="project">
+          <img src="img/javascript-logo-E967E87D74-seeklogo.com.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>
+        Gostou do meu trabalho? Vamos conversar! Você pode me encontrar nas
+        redes sociais ou enviar um e-mail diretamente para
+        <strong>italobgalata@hotmail.com</strong>.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Italo Galata. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
