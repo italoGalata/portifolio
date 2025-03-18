@@ -13,9 +13,8 @@
       }
       body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
         background-color: #1a1a1a; /* Black */
+        color: white;
       }
 
       header {
@@ -28,7 +27,10 @@
       nav {
         display: flex;
         justify-content: center;
-        background-color: #2f004c; /* Darker Purple */
+        background-color: #2f004c;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
       }
 
       nav a {
@@ -47,38 +49,37 @@
       section {
         padding: 40px 10%;
         margin: 20px 0;
-        color: white;
       }
 
       section h2 {
         text-align: center;
-        color: #fff;
       }
 
       .projects {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;           /* Prevent line breaks */
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
-        margin: 0 auto;
-        width: 100%;
       }
 
       .project {
         background-color: #2f2f2f;
         border: 1px solid #ddddddb4;
         padding: 20px;
-        width: 35%;                  /* Increased width for images */
-        box-sizing: border-box;
+        width: 40%;
+        height: 250px;
         border-radius: 8px;
         text-align: center;
         transition: transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       .project img {
-        object-fit: cover;
         width: 100%;
-        height: 250px;               /* Increased height */
+        height: 100%;
+        object-fit: contain;
         border-radius: 8px;
       }
 
@@ -88,24 +89,28 @@
 
       @media (max-width: 768px) {
         .project {
-          width: 35%;                
+          width: 45%;
+          height: 200px;
         }
       }
 
       @media (max-width: 480px) {
         .project {
-          width: 45%;                
+          width: 100%;
+          height: 180px;
         }
       }
 
       footer {
-        background-color: #4b006e; /* Dark Purple */
+        background-color: #4b006e;
         color: white;
         text-align: center;
         padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        margin-top: 20px;
+      }
+
+      .contact-text {
+        text-align: center;
       }
     </style>
   </head>
@@ -115,7 +120,7 @@
     </header>
 
     <nav>
-      <a href="#about">About Me</a>
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -147,12 +152,14 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>
-        Liked my work? Let's talk! You can find me on social media <a href="https://www.instagram.com/italin__?igsh=bXM5bzNhcnRyYjNu"> Italo galata  </a> or send an
+      <p class="contact-text">
+        Liked my work? Let's talk! You can find me on social media <a href="https://www.instagram.com/italin__?igsh=bXM5bzNhcnRyYjNu">Italo Galata</a> or send an
         email directly to <strong>italobgalata@hotmail.com</strong>.
       </p>
     </section>
 
-    
+    <footer>
+      <p>&copy; 2025 Italo Galata - All rights reserved.</p>
+    </footer>
   </body>
 </html>
