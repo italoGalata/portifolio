@@ -148,7 +148,7 @@
     <section id="contact">
       <h2>Contact</h2>
       <p>
-        Liked my work? Let's talk! You can find me on social media <a href=""> Italo galata  </a> or send an
+        Liked my work? Let's talk! You can find me on social media <a href="https://www.instagram.com/italin__?igsh=bXM5bzNhcnRyYjNu"> Italo galata  </a> or send an
         email directly to <strong>italobgalata@hotmail.com</strong>.
       </p>
     </section>
